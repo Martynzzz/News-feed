@@ -1,0 +1,74 @@
+.pagination {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto; 
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 0.5rem;
+}
+.pagination .page-item {
+  white-space: nowrap;
+  flex: 0 0 auto;
+
+}
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #212529;
+  --card-bg: #f8f9fa;
+}
+
+[data-theme="dark"] {
+  --bg-color: #212529;
+  --text-color: #f8f9fa;
+  --card-bg: #343a40;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.card {
+  background-color: var(--card-bg);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.navbar, .card-footer {
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.row-cols-1 .card {
+  margin-bottom: 1.5rem;
+}
+
+.card-img-top {
+  object-fit: cover;
+  height: 200px;
+}
+
+.card-title a {
+  color: inherit;
+  font-weight: 600;
+}
+
+.card-title a:hover {
+  text-decoration: none;
+  color: #0d6efd;
+}
+#scroll-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  display: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+#scroll-top:hover {
+  opacity: 1;
+}
