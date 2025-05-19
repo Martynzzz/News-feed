@@ -6,6 +6,7 @@ from flask import Flask, render_template, request # type: ignore
 app = Flask(__name__)
 app.config.from_object(Config)
 init_cache(app)
+server=app.server
 
 @app.route('/')
 def index():
@@ -60,10 +61,10 @@ def search():
     articles = filtered[start:end]
 
     return render_template('index.html',
-                           articles=articles,
-                           page=page,
-                           total=total,
-                           per_page=per_page)
+articles=articles,
+page=page,
+total=total,
+per_page=per_page)
 
   
 
