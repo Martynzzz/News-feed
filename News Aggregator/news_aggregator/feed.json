@@ -1,0 +1,14 @@
+[
+  {"name": "TechCrunch", "url": "http://feeds.techcrunch.com/TechCrunch/"},
+  {"name": "BBC World",  "url": "http://feeds.bbci.co.uk/news/world/rss.xml"},
+  {"name": "The Verge", "url": "https://www.theverge.com/rss/index.xml"},
+  {"name": "The Guardian", "url": "https://www.theguardian.com/world/rss"},
+  {"name": "Reuters", "url": "http://feeds.reuters.com/reuters/topNews"},
+  {"name": "NPR", "url": "https://www.npr.org/rss/rss.php?id=1001"},
+  {"name": "Wired", "url": "https://www.wired.com/feed/category/science/latest/rss"},
+  {"name": "NY Times", "url": "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml"},
+  {
+    "name": "Ars Technica",
+    "url": "http://feeds.arstechnica.com/arstechnica/index/"
+  }
+]

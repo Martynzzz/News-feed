@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}{{ source }}{% endblock %}
+{% block content %}
+  <h2>Articles from {{ source }}</h2>
+  {% include 'macros.html' %}
+  {{ ui.render_articles(articles) }}
+  <nav aria-label="Page navigation">
+    <ul class="pagination justify-content-center mt-4">
+      {%- set pages = (total // per_page) + (1 if total % per_page else 0) %}
+      {%- for p in range(1, pages+1) %}
+        <li class="page-item {% if p==page %}active{% endif %}">
+          <a class="page-link" href="{{ request.path }}?page={{ p }}">{{ p }}</a>
+        </li>
+      {%- endfor %}
+    </ul>
+  </nav>
+  
+{% endblock %}
