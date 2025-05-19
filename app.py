@@ -7,7 +7,6 @@ app = Flask(__name__)
 app.config.from_object(Config)
 init_cache(app)
 
-server=app.server
 
 
 @app.route('/')
